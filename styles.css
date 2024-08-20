@@ -23,6 +23,10 @@ h1 {
     font-family: Merienda;
 }
 
+h2 {
+    font-family: Merienda;
+}
+
 /************************************************************************/
 
 /* tipo y tamaño base de la fuente */
@@ -37,6 +41,14 @@ h1 {
     background: #ccc;
 }
 
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    padding: 0;
+
+}
 header img {
     width: 100px;
     height: 50px;
@@ -44,14 +56,6 @@ header img {
     padding: 5px;
     border: 1px solid #ccc;
 }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-
-}
-
 header {
     background-color: #c10064;
     color: #fff;
@@ -85,10 +89,11 @@ nav li {
 }
 
 nav a {
-    color: var(--dark);
+    color: #c10064;
     text-decoration: none;
     margin-top: 3rem;
     padding: 2rem;
+    font-size:larger ;
 
 }
 
@@ -100,6 +105,13 @@ section {
     padding: 20px;
     background-color: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.videos{
+    color: white;
+}
+#titulo2 {
+    margin: 20px;
+    padding: 20px;
 }
 
 #carousel-images {
@@ -134,35 +146,53 @@ section {
 #carousel-next-btn {
     right: 0;
 }
-
+/*   */
+.recuadro {
+    border: 2px solid #100641; 
+    padding: 20px;
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+}
 #videos iframe {
     margin: 4rem;
     width: 50%;
     height: 400px;
     border: 1px solid #ccc;
 }
+
 #enlaces {
-    list-style-type: none; /* Eliminar viñetas */
-    padding: 0; /* Eliminar padding */
-    margin: 0; /* Eliminar margin */
-    display: flex; /* Usar flexbox para la lista en línea */
-    justify-content: space-around; /* Espacio uniforme entre elementos */
+    list-style-type: none;
+    /* Eliminar viñetas */
+    padding: 0;
+    /* Eliminar padding */
+    margin: 0;
+    /* Eliminar margin */
+    display: flex;
+    /* Usar flexbox para la lista en línea */
+    justify-content: space-around;
+    /* Espacio uniforme entre elementos */
 }
 
 .enlaces li {
-    margin: 0 10px; /* Espacio horizontal entre los elementos de la lista */
+    margin: 0 10px;
+    /* Espacio horizontal entre los elementos de la lista */
 }
 
 .social-icon {
-    width: 50px; /* Ancho reducido para las imágenes */
-    height: auto; /* Altura automática para mantener proporciones */
+    width: 50px;
+    /* Ancho reducido para las imágenes */
+    height: auto;
+    /* Altura automática para mantener proporciones */
 }
 
 
 
 .container {
-    border: 2px solid #4CAF50;
-    background-color: #00C1A8;
+    border: 2px solid #c10064;
+    background-color: #100641;
 
     margin: 20px auto;
     text-align: center;
@@ -209,7 +239,13 @@ section {
     /* Margen superior para separar la imagen */
 }
 
+.ft{
+    margin: 2rem;
+}
 
+.bodega {
+    color:#c10064;
+}
 /* styles.css */
 
 
@@ -225,6 +261,60 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra */
 }
+
+.content {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.scroll-content {
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fotos {
+    max-width: 800px;
+    margin: 4rem auto;
+    text-align: center;
+   
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-principal {
+    margin-bottom: 20px;
+}
+
+.imagen-principal img {
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo para la imagen grande */
+    height: auto;
+    border-radius: 8px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre miniaturas */
+}
+
+.galeria .miniatura {
+    width: 150px; /* Ancho de las miniaturas */
+    height: auto; /* Mantener proporción */
+    cursor: pointer; /* Cambiar cursor al posarse sobre la imagen */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para miniaturas */
+}
+
+.galeria .miniatura:hover {
+    opacity: 0.8; /* Efecto hover para miniaturas */
+}
+
 
 form {
     display: flex;
@@ -255,7 +345,7 @@ button {
     /* Margen superior para el botón */
     padding: 10px;
     /* Espaciado dentro del botón */
-    background-color: #00C1A8;
+    background-color: #100641;
     /* Color de fondo (verde) */
     color: white;
     /* Color del texto */
@@ -268,7 +358,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #c10064;
     /* Color del botón al pasar el cursor */
 }
 
@@ -277,4 +367,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 90vh;
+}
+footer{
+    text-align: center;
 }

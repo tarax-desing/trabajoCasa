@@ -30,6 +30,10 @@
         </ul>
 
     </nav>
+    <div class="recuadro">
+        <p id="frase">¡Te cuento algo sobre mí!</p>
+        <button onclick="mostrarFrase()">Saber más</button>
+    </div>
 
     <!-- Section Home -->
     <section id="home">
@@ -37,6 +41,29 @@
         <p>Soy una apasionada de la creatividad y las nuevas tecnologías. <span class="text">Te enseñaré a
                 usarlas.</span></p>
     </section>
+ 
+    <div id="links">
+        <h2 id="titulo2">Mis Redes</h2>
+        <ul id="enlaces">
+            <li class="enlaces li">
+                <a href="https://www.musicforspinning.com" target="_blank">
+                    <img src="img/Wordpress.png" alt="Ir a Music for Spinning" class="social-icon">
+                </a>
+            </li>
+            <li class="enlaces li">
+                <a href="https://www.linkedin.com/in/elena-perandres-molino/" target="_blank">
+                    <img src="img/linkedin.png" alt="linkedin" class="social-icon">
+                </a>
+            </li>
+            <li class="enlaces li">
+                <a href="https://www.youtube.com/@spinning-music_bySatarax" target="_blank">
+                    <img src="img/youtube.png" alt="y" class="social-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+  
+    
     <section id="works">
         <h1>Mis trabajos </h1>
         <!-- Carousel de imágenes -->
@@ -45,80 +72,91 @@
                 <img src="img/superpuesta.png" alt="Image 1">
                 <img src="img/out-1.png" alt="Image 2">
                 <img src="img/out-1.webp" alt="Image 3">
-                <img src="img/out-0.png" alt="Image 3">
+                <img src="img/out-0.png" alt="Image4">
+                <img src="img/out-2.webp" alt="Image 5">
             </div>
             <button id="carousel-prev-btn">Previous</button>
             <button id="carousel-next-btn">Next</button>
         </div>
+        <!--  -->
 
 
-        <section class="container">
 
-            <!-- Videos -->
-            <div id="videos">
-                <h2>Mis Videos</h2>
-              
 
-                    <div class="vimeo">
-                        <iframe src="https://player.vimeo.com/video/998145173"></iframe>
-                    </div>
-
-                    <iframe width="560" height="315" src="https://player.vimeo.com/video/701308910?h=8d9aa60280"
-                        width="640" height="360" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
+     
 
         <!-- Enlaces -->
-        <div id="links">
-            <h2>Mis Redes</h2>
-            <ul id="enlaces">
-                <li class="enlaces li">
-                    <a href="https://www.musicforspinning.com" target="_blank">
-                        <img src="img/Wordpress.png" alt="Ir a Music for Spinning" class="social-icon">
-                    </a>
-                </li>
-                <li class="enlaces li">
-                    <a href="https://www.linkedin.com/in/elena-perandres-molino/" target="_blank">
-                        <img src="img/linkedin.png" alt="linkedin" class="social-icon">
-                    </a>
-                </li>
-                <li class="enlaces li">
-                    <a href="https://www.youtube.com/@spinning-music_bySatarax" target="_blank">
-                        <img src="img/youtube.png" alt="y" class="social-icon">
-                    </a>
-                </li>
-            </ul>
-        </div>
+       
     </section>
 
-    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #00C1A8;"></path>
-        </svg>
-    </div>
+
     <!-- ///////////// -->
 
     <section class="three-columns">
         <div class="column">
-            <h2>Título 1</h2>
-            <p>Este es un párrafo descriptivo sobre el contenido de la columna 1.</p>
-            <img src="imagen1.jpg" alt="Descripción de la imagen 1">
+            <h2>Copa LLena</h2>
+            <p class="ft">Creación de logo y gestión de R.R.S.S. <br><br class="bodega">Bodegas Copa llena</p>
+            <img src="img/a.png" alt="logo de la bodega">
         </div>
         <div class="column">
-            <h2>Título 2</h2>
-            <p>Este es un párrafo descriptivo sobre el contenido de la columna 2.</p>
-            <img src="imagen2.jpg" alt="Descripción de la imagen 2">
+            <h2>Ceuta</h2>
+            <p class="ft">Audiovisual Epica. <br>Evento solidario ciclo-maraton ciudad de Ceuta</p>
+            <img src="img/mqdefault.webp" alt="Ceuta">
         </div>
         <div class="column">
-            <h2>Título 3</h2>
-            <p>Este es un párrafo descriptivo sobre el contenido de la columna 3.</p>
-            <img src="imagen3.jpg" alt="Descripción de la imagen 3">
+            <h2>Mi web</h2>
+            <p class="ft">Todo lo que necesitas saber sobre spinning y como practicarlo de forma segura.</p>
+            <img src="img/logo-min.jpg" alt="logo pag.">
         </div>
     </section>
-    <!--  -->
+    <div class="fotos">
+        <div class="imagen-principal">
+            <img id="imagenGrande" src="img/ciudad.jpg" alt="Imagen Principal">
+        </div>
+        <div class="galeria">
+            <img class="miniatura" src="img/behance.jpg" alt="Imagen 1" onclick="cambiarImagen(this.src)">
+            <img class="miniatura" src="img/chicaMusic.jpg" alt="Imagen 2" onclick="cambiarImagen(this.src)">
+            <img class="miniatura" src="img/chico.jpg" alt="Imagen 3" onclick="cambiarImagen(this.src)">
+            <img class="miniatura" src="img/startImperium.jpg" alt="Imagen 4" onclick="cambiarImagen(this.src)">
+        </div>
+    </div>
+    <!--  --> <section class="three-columns">
+        <div class="column">
+            <h2>Corbatas fuera</h2>
+            <p class="ft">Creación de logo y gestión de R.R.S.S.</p>
+            <img src="img/smartmockups_lx34yahm.jpg" alt="logo de empresa">
+        </div>
+        <div class="column">
+            <h2>Historia</h2>
+            <p class="ft">Canal de historia <br> En youtube , face e insta.</p>
+            <img src="img/Summer.png" alt="history">
+        </div>
+        <div class="column">
+            <h2>Imágenes y videos con IA.</h2>
+            <p class="ft">Imágenes espectaculares con los mejores prompt y videos para tus montajes</p>
+            <img src="img/zeus.jpeg" alt="logo pag.">
+        </div>
+    </section>
     </section>
 
+
+
+ 
+<section class="container">
+
+    <!-- Videos -->
+    <div id="videos">
+        <h2 class="videos">Mis Videos</h2>
+
+
+        <div class="vimeo">
+            <iframe src="https://player.vimeo.com/video/998145173"></iframe>
+        </div>
+
+        <iframe width="560" height="315" src="https://player.vimeo.com/video/701308910?h=8d9aa60280" width="640"
+            height="360" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
     <!-- Section Contact -->
     <section class="padre">
         <section id="contact">
@@ -137,8 +175,15 @@
         </section>
 
     </section>
-    <!-- Footer -->
+    <!-- Footer --> 
+
     <footer>
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #100641;"></path>
+        </svg>
+    </div>
         <p>&copy;2024 My Portfolio</p>
     </footer>
     </div>

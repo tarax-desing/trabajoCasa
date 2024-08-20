@@ -188,7 +188,39 @@ section {
     /* Altura automática para mantener proporciones */
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 6rem auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
 .container {
     border: 2px solid #c10064;
@@ -314,16 +346,22 @@ section {
 .galeria .miniatura:hover {
     opacity: 0.8; /* Efecto hover para miniaturas */
 }
-
+#contact {
+    text-align: center;
+}
 
 form {
     display: flex;
     /* Usar flexbox */
     flex-direction: column;
     /* Apilar los elementos verticalmente */
+    text-align: center;
 
 }
-
+.form-container{
+    margin: 2rem;
+    text-align: center;
+}
 label {
     margin-top: 10px;
     /* Margen superior para las etiquetas */

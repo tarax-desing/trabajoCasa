@@ -40,3 +40,19 @@ document.getElementById('carousel-next-btn').addEventListener('click', () => {
     index = (index < totalItems - 1) ? index + 1 : 0; // Incrementa el índice o vuelve al inicio
     updateCarousel();
 });
+
+const images = document.querySelectorAll('.carousel-items img');
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-image');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+images.forEach(img => {
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}

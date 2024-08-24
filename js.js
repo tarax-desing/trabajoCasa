@@ -56,3 +56,16 @@ images.forEach(img => {
 closeBtn.onclick = function() {
   modal.style.display = "none";
 }
+
+// / Efecto parallax
+
+
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallax = document.querySelectorAll('.parallax');
+    
+    parallax.forEach(element => {
+        const speed = 0.5;
+        element.style.backgroundPositionY = `${scrolled * speed}px`;
+    });
+});

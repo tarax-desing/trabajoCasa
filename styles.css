@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.6;
 }
 
 h1 {
@@ -21,7 +22,13 @@ h1 {
 h2 {
   font-family: Merienda;
 }
-
+h3 {
+  font-style: italic;
+  font-size: large;
+  font-family: Merienda;
+  color: rgb(2, 148, 105)
+  
+}
 /************************************************************************/
 
 /* tipo y tamaño base de la fuente */
@@ -166,6 +173,9 @@ section {
   border-radius: 10px;
   background-color: #f9f9f9;
 }
+.svg {
+  padding-top: 1rem;
+}
 #videos iframe {
   margin: 4rem;
   width: 50%;
@@ -228,7 +238,7 @@ section {
 
 .container {
   border: 2px solid #c10064;
-  background-color: rgb(2, 148, 105);
+  background-color: #ffc080;
 
   margin: 20px auto;
   text-align: center;
@@ -254,7 +264,7 @@ section {
 .project {
   display: flex;
   flex-wrap: wrap;
-
+  text-align: center;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -286,6 +296,7 @@ section {
 
 /*  */
 .contenedor-central {
+  margin-top: 4rem;
   flex: 1;
   display: flex;
 }
@@ -497,11 +508,11 @@ button {
   /* Margen superior para el botón */
   padding: 10px;
   /* Espaciado dentro del botón */
-  background-color: rgb(75, 216, 174);
+  background-color: #ffc080;
   /* Color de fondo (verde) */
   color: white;
   /* Color del texto */
-  border: none;
+  border: #000 1;
   /* Sin borde */
   border-radius: 4px;
   /* Bordes redondeados */

@@ -26,7 +26,7 @@ h3 {
   font-style: italic;
   font-size: large;
   font-family: Merienda;
-  color: rgb(2, 148, 105)
+  color: rgb(#00ACC2)
   
 }
 /************************************************************************/
@@ -40,7 +40,7 @@ h3 {
   left: 60px;
   width: 150px;
   height: 80px;
-  background: rgb(2, 148, 105);
+  background: rgb(#00ACC2);
 }
 
 body {
@@ -238,7 +238,7 @@ section {
 
 .container {
   border: 2px solid #c10064;
-  background-color: #ffc080;
+  background-color: white;
 
   margin: 20px auto;
   text-align: center;

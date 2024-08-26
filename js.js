@@ -15,6 +15,8 @@ function mostrarFrase() {
     document.getElementById("frase").innerText = frases[indiceAleatorio];
 }
 
+setInterval (mostrarFrase, 2000)
+
 function cambiarImagen(src) {
     document.getElementById('imagenGrande').src = src;
 }
